@@ -1,0 +1,14 @@
+echo "$(date) About to run"
+@reboot source /home/ubuntu/workspace/run.sh
+
+/home/ubuntu/workspace/bash_functions.sh
+
+if [[ -f /home/ubuntu/workspace/bash_functions ]]; then
+    source /home/ubuntu/workspace/bash_functions
+fi
+
+echo "Some text here." >> /home/ubuntu/workspace/backuplog
+rm -rf somefolder
+nano txt
+cat txt
+crontab -e
